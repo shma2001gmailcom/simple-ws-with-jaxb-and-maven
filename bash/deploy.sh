@@ -1,7 +1,7 @@
 #!/bin/bash
 ##
 ## script for comfortable developing with tomcat and maven
-## IS NOT APPLICABLE FOR THE CURRENT PROJECT FOR FUTURE USAGE
+## IS NOT APPLICABLE FOR THE CURRENT PROJECT. FOR FUTURE USAGE
 ## 1. cd to appfolder dir
 ## 2. run mvn clean install
 ## 3. stop server
