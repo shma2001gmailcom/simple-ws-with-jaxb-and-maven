@@ -25,6 +25,9 @@
         <module name="converter-ws" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="converter-ws" target="1.6" />
+    </bytecodeTargetLevel>
   </component>
 </project>
 
