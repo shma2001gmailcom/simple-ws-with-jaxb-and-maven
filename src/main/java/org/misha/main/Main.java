@@ -24,8 +24,8 @@ public class Main {
         Currency toCurrencyAnother = Currency.RUB;
         Double conversionRateAnother = currencyService.getConversionRate(fromCurrencyAnother, toCurrencyAnother);
         Double conversionRate = currencyService.getConversionRate(fromCurrency, toCurrency);
-        log.info(stringView.getView(conversionRate,toCurrency,fromCurrency ));
-        log.info(stringView.getView(conversionRateAnother,toCurrencyAnother, fromCurrencyAnother));
-        log.info(stringView.getView(conversionRate * conversionRateAnother,toCurrencyAnother, fromCurrency));
+        log.info(stringView.getView(conversionRate, toCurrency, fromCurrency));
+        log.info(stringView.getView(conversionRateAnother, toCurrencyAnother, fromCurrencyAnother));
+        log.info(stringView.getView(conversionRate * conversionRateAnother, toCurrencyAnother, fromCurrency));
     }
 }

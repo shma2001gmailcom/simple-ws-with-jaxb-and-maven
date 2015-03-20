@@ -5,5 +5,5 @@
 // Generated on: 2015.03.20 at 04:21:35 PM OMST 
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "http://www.webserviceX.NET/", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED)
-package org.misha.wsdl.currency;
+@javax.xml.bind.annotation.XmlSchema(namespace = "http://www.webserviceX.NET/",
+                                     elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED) package org.misha.wsdl.currency;

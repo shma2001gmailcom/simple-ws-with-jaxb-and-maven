@@ -21,8 +21,8 @@ public class CurrencyService {
         ConversionRate conversionRate = new ObjectFactory().createConversionRate();
         conversionRate.setFromCurrency(fromCurrency);
         conversionRate.setToCurrency(toCurrency);
-        ConversionRateResponse response = (ConversionRateResponse) webServiceTemplate.marshalSendAndReceive(
-                conversionRate);
+        ConversionRateResponse response =
+                (ConversionRateResponse) webServiceTemplate.marshalSendAndReceive(conversionRate);
         return response.getConversionRateResult();
     }
 }

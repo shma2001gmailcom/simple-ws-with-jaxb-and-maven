@@ -10,6 +10,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class StringView {
     public String getView(Double conversionRate, Currency toCurrency, Currency fromCurrency) {
-        return String.format("You can get %s %s for 1 %s.", String.format("%1$,.4f", conversionRate), toCurrency, fromCurrency);
+        return String.format("You can get %s %s for 1 %s.", String.format("%1$,.4f", conversionRate), toCurrency,
+                             fromCurrency
+        );
     }
 }

@@ -8,18 +8,14 @@
 
 package org.misha.wsdl.currency;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 
 
 /**
  * <p>Java class for anonymous complex type.
- * 
+ * <p/>
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ * <p/>
  * <pre>
  * &lt;complexType>
  *   &lt;complexContent>
@@ -32,13 +28,9 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "fromCurrency",
-    "toCurrency"
+@XmlType(name = "", propOrder = {"fromCurrency", "toCurrency"
 })
 @XmlRootElement(name = "ConversionRate")
 public class ConversionRate {
@@ -50,11 +42,9 @@ public class ConversionRate {
 
     /**
      * Gets the value of the fromCurrency property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Currency }
-     *     
+     *
+     * @return possible object is
+     * {@link Currency }
      */
     public Currency getFromCurrency() {
         return fromCurrency;
@@ -62,11 +52,9 @@ public class ConversionRate {
 
     /**
      * Sets the value of the fromCurrency property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Currency }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Currency }
      */
     public void setFromCurrency(Currency value) {
         this.fromCurrency = value;
@@ -74,11 +62,9 @@ public class ConversionRate {
 
     /**
      * Gets the value of the toCurrency property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Currency }
-     *     
+     *
+     * @return possible object is
+     * {@link Currency }
      */
     public Currency getToCurrency() {
         return toCurrency;
@@ -86,11 +72,9 @@ public class ConversionRate {
 
     /**
      * Sets the value of the toCurrency property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Currency }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Currency }
      */
     public void setToCurrency(Currency value) {
         this.toCurrency = value;
