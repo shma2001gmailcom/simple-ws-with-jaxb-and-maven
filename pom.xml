@@ -21,6 +21,7 @@
     </dependencies>
     <build>
         <plugins>
+<<<<<<< HEAD
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>2.3.2</version>
@@ -30,6 +31,8 @@
                     <debug>true</debug>
                 </configuration>
             </plugin>
+=======
+>>>>>>> c72d8bb64fc01312fcf7ce7db858775624d68edd
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>jaxb2-maven-plugin</artifactId>
@@ -98,4 +101,8 @@
             </plugin>
         </plugins>
     </build>
+<<<<<<< HEAD
 </project>
+=======
+</project>
+>>>>>>> c72d8bb64fc01312fcf7ce7db858775624d68edd
