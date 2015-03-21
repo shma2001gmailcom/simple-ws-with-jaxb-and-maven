@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d66295d-faf3-4478-b2b3-ce22f1f8c7bd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
+    <list default="true" id="3d66295d-faf3-4478-b2b3-ce22f1f8c7bd" name="Default" comment="Merge https://github.com/shma2001gmailcom/simple-ws-with-jaxb-and-maven&#10;&#10;Conflicts:&#10;&#9;pom.xml&#10;#&#10;# It looks like you may be committing a merge.&#10;# If this is not correct, please remove the file&#10;#&#9;.git/MERGE_HEAD&#10;# and try again.&#10;&#10;# Please enter the commit message for your changes. Lines starting&#10;# with '#' will be ignored, and an empty message aborts the commit.&#10;# On branch master&#10;# All conflicts fixed but you are still merging.&#10;#&#10;# Changes to be committed:&#10;#&#9;modified:   .idea/workspace.xml&#10;#&#9;new file:   README.md&#10;#&#9;modified:   bash/deploy.sh&#10;#&#9;modified:   bash/remove-logs.sh&#10;#&#9;modified:   pom.xml&#10;#&#9;modified:   target/classes/org/misha/wsdl/currency/ConversionRate.class&#10;#&#9;modified:   target/classes/org/misha/wsdl/currency/ConversionRateResponse.class&#10;#&#9;modified:   target/classes/org/misha/wsdl/currency/Currency.class&#10;#&#9;modified:   target/classes/org/misha/wsdl/currency/ObjectFactory.class&#10;#&#9;modified:   target/classes/org/misha/wsdl/currency/package-info.class&#10;#&#9;modified:   target/converter-ws-1.0-SNAPSHOT.jar&#10;#&#10;# Untracked files:&#10;#&#9;target/dependency-jars/&#10;#&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bash/run.cmd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bash/run.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/ConversionRate.java" afterPath="$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/ConversionRate.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/ConversionRateResponse.java" afterPath="$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/ConversionRateResponse.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/Currency.java" afterPath="$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/Currency.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/misha/service/CurrencyService.java" afterPath="$PROJECT_DIR$/src/main/java/org/misha/service/CurrencyService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/misha/main/Main.java" afterPath="$PROJECT_DIR$/src/main/java/org/misha/main/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/ObjectFactory.java" afterPath="$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/ObjectFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/misha/views/StringView.java" afterPath="$PROJECT_DIR$/src/main/java/org/misha/views/StringView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/currency.wsdl" afterPath="$PROJECT_DIR$/src/main/resources/currency.wsdl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/package-info.java" afterPath="$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/package-info.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bash/remove-logs.sh" afterPath="$PROJECT_DIR$/bash/remove-logs.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="converter-ws.iws" />
@@ -89,8 +86,20 @@
       <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="44" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2438">
-              <folding />
+            <state line="13" column="44" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0" vertical-offset="299" max-vertical-offset="2438">
+              <folding>
+                <marker date="1426844724087" expanded="true" signature="1201:2620" placeholder="..." />
+                <marker date="1426844724087" expanded="true" signature="2641:3513" placeholder="..." />
+                <marker date="1426844724087" expanded="true" signature="2830:3491" placeholder="..." />
+                <marker date="1426844724087" expanded="true" signature="2860:3458" placeholder="..." />
+                <marker date="1426844724087" expanded="true" signature="2895:3144" placeholder="..." />
+                <marker date="1426844724087" expanded="true" signature="3534:4258" placeholder="..." />
+                <marker date="1426844724087" expanded="true" signature="3669:4236" placeholder="..." />
+                <marker date="1426844724087" expanded="true" signature="3701:4206" placeholder="..." />
+                <marker date="1426844724087" expanded="true" signature="3831:3923" placeholder="..." />
+                <marker date="1426844724087" expanded="true" signature="3963:4173" placeholder="..." />
+                <marker date="1426844724087" expanded="true" signature="4009:4132" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -98,52 +107,16 @@
       <file leaf-file-name="remove-logs.sh" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bash/remove-logs.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="14" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+            <state line="6" column="14" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0" vertical-offset="138" max-vertical-offset="345">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom-4.0.0.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar:///opt/apache-maven-3.2.2/lib/maven-model-builder-3.2.2.jar!/org/apache/maven/model/pom-4.0.0.xml">
+      <file leaf-file-name="applicationContext.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="8" selection-start="2891" selection-end="2891" vertical-scroll-proportion="0.0" vertical-offset="2484" max-vertical-offset="3588">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ObjectFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/ObjectFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="31" selection-start="2007" selection-end="2007" vertical-scroll-proportion="0.0" vertical-offset="1334" max-vertical-offset="1587">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConversionRate.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/ConversionRate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="20" selection-start="1985" selection-end="1985" vertical-scroll-proportion="0.0" vertical-offset="1564" max-vertical-offset="2047">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Currency.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/Currency.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="342" column="0" selection-start="7940" selection-end="7940" vertical-scroll-proportion="0.0" vertical-offset="7002" max-vertical-offset="7912">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view-log.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bash/view-log.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="8" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="299">
+            <state line="25" column="17" selection-start="1291" selection-end="1291" vertical-scroll-proportion="0.0" vertical-offset="575" max-vertical-offset="966">
               <folding />
             </state>
           </provider>
@@ -152,7 +125,7 @@
       <file leaf-file-name="log4j.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="411" max-vertical-offset="966">
+            <state line="3" column="0" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="69" max-vertical-offset="966">
               <folding />
             </state>
           </provider>
@@ -161,7 +134,45 @@
       <file leaf-file-name="StringView.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/views/StringView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="13" selection-start="188" selection-end="188" vertical-scroll-proportion="0.37297297" vertical-offset="0" max-vertical-offset="555">
+            <state line="17" column="0" selection-start="487" selection-end="487" vertical-scroll-proportion="0.6452145" vertical-offset="0" max-vertical-offset="606">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="View.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/views/View.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="0" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0" vertical-offset="253" max-vertical-offset="391">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="run.sh" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bash/run.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="0" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0" vertical-offset="46" max-vertical-offset="184">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/main/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="33" selection-start="1168" selection-end="1168" vertical-scroll-proportion="0.0" vertical-offset="598" max-vertical-offset="851">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CurrencyService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/service/CurrencyService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="13" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="805">
               <folding />
             </state>
           </provider>
@@ -189,6 +200,9 @@
         <option value="$PROJECT_DIR$/bash/view-log.sh" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/bash/remove-logs.sh" />
+        <option value="$PROJECT_DIR$/bash/run.sh" />
+        <option value="$PROJECT_DIR$/bash/run.cmd" />
+        <option value="$PROJECT_DIR$/src/main/java/org/misha/views/View.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/misha/views/StringView.java" />
       </list>
     </option>
@@ -235,8 +249,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-1" />
-    <option name="width" value="1922" />
-    <option name="height" value="1081" />
+    <option name="y" value="27" />
+    <option name="width" value="1602" />
+    <option name="height" value="843" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -264,6 +279,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -454,8 +471,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -466,7 +481,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.sourceCode.Java" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Cmd" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -485,20 +500,7 @@
       <recent name="org.misha.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Bash.remove-logs.sh">
-    <configuration default="false" name="remove-logs.sh (3)" type="BashConfigurationType" factoryName="Bash" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="INTERPRETER_PATH" value="/bin/bash" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bash" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <module name="converter-ws" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bash/remove-logs.sh" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Batch.run">
     <configuration default="false" name="remove-logs.sh (4)" type="BashConfigurationType" factoryName="Bash" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="INTERPRETER_PATH" value="/bin/bash" />
@@ -549,6 +551,18 @@
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="run" type="BatchConfigurationType" factoryName="Batch" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bash" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <module name="converter-ws" />
+      <option name="SCRIPT_NAME" value="run.cmd" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="BatchRunner" />
+      <ConfigurationWrapper RunnerId="BatchRunner" />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
@@ -609,6 +623,16 @@
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="BatchConfigurationType" factoryName="Batch">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <module name="converter-ws" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -689,19 +713,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Bash.remove-logs.sh (3)" />
-      <item index="1" class="java.lang.String" itemvalue="Bash.remove-logs.sh (4)" />
-      <item index="2" class="java.lang.String" itemvalue="Bash.tar.sh" />
-      <item index="3" class="java.lang.String" itemvalue="Bash.view-log.sh" />
-      <item index="4" class="java.lang.String" itemvalue="Bash.remove-logs.sh" />
+      <item index="0" class="java.lang.String" itemvalue="Bash.remove-logs.sh (4)" />
+      <item index="1" class="java.lang.String" itemvalue="Bash.tar.sh" />
+      <item index="2" class="java.lang.String" itemvalue="Bash.view-log.sh" />
+      <item index="3" class="java.lang.String" itemvalue="Bash.remove-logs.sh" />
+      <item index="4" class="java.lang.String" itemvalue="Batch.run" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Bash.remove-logs.sh" />
-        <item index="1" class="java.lang.String" itemvalue="Bash.view-log.sh" />
-        <item index="2" class="java.lang.String" itemvalue="Bash.tar.sh" />
-        <item index="3" class="java.lang.String" itemvalue="Bash.remove-logs.sh (4)" />
-        <item index="4" class="java.lang.String" itemvalue="Bash.remove-logs.sh (3)" />
+        <item index="0" class="java.lang.String" itemvalue="Batch.run" />
+        <item index="1" class="java.lang.String" itemvalue="Bash.remove-logs.sh" />
+        <item index="2" class="java.lang.String" itemvalue="Bash.view-log.sh" />
+        <item index="3" class="java.lang.String" itemvalue="Bash.tar.sh" />
+        <item index="4" class="java.lang.String" itemvalue="Bash.remove-logs.sh (4)" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -716,7 +740,11 @@
       <created>1426784646397</created>
       <updated>1426784646397</updated>
       <workItem from="1426784656838" duration="8914000" />
-      <workItem from="1426841630233" duration="5304000" />
+      <workItem from="1426841630233" duration="6431000" />
+      <workItem from="1426848993938" duration="1287000" />
+      <workItem from="1426868169211" duration="594000" />
+      <workItem from="1426905698640" duration="1126000" />
+      <workItem from="1426942972752" duration="208000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1426792852749</created>
@@ -730,21 +758,33 @@
       <created>1426844735025</created>
       <updated>1426844735025</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Merge https://github.com/shma2001gmailcom/simple-ws-with-jaxb-and-maven&#10;&#10;Conflicts:&#10;&#9;pom.xml&#10;#&#10;# It looks like you may be committing a merge.&#10;# If this is not correct, please remove the file&#10;#&#9;.git/MERGE_HEAD&#10;# and try again.&#10;&#10;# Please enter the commit message for your changes. Lines starting&#10;# with '#' will be ignored, and an empty message aborts the commit.&#10;# On branch master&#10;# All conflicts fixed but you are still merging.&#10;#&#10;# Changes to be committed:&#10;#&#9;modified:   .idea/workspace.xml&#10;#&#9;new file:   README.md&#10;#&#9;modified:   bash/deploy.sh&#10;#&#9;modified:   bash/remove-logs.sh&#10;#&#9;modified:   pom.xml&#10;#&#9;modified:   target/classes/org/misha/wsdl/currency/ConversionRate.class&#10;#&#9;modified:   target/classes/org/misha/wsdl/currency/ConversionRateResponse.class&#10;#&#9;modified:   target/classes/org/misha/wsdl/currency/Currency.class&#10;#&#9;modified:   target/classes/org/misha/wsdl/currency/ObjectFactory.class&#10;#&#9;modified:   target/classes/org/misha/wsdl/currency/package-info.class&#10;#&#9;modified:   target/converter-ws-1.0-SNAPSHOT.jar&#10;#&#10;# Untracked files:&#10;#&#9;target/dependency-jars/&#10;#&#10;">
+      <created>1426847507617</created>
+      <updated>1426847507617</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Merge https://github.com/shma2001gmailcom/simple-ws-with-jaxb-and-maven&#10;&#10;Conflicts:&#10;&#9;pom.xml&#10;#&#10;# It looks like you may be committing a merge.&#10;# If this is not correct, please remove the file&#10;#&#9;.git/MERGE_HEAD&#10;# and try again.&#10;&#10;# Please enter the commit message for your changes. Lines starting&#10;# with '#' will be ignored, and an empty message aborts the commit.&#10;# On branch master&#10;# All conflicts fixed but you are still merging.&#10;#&#10;# Changes to be committed:&#10;#&#9;modified:   .idea/workspace.xml&#10;#&#9;new file:   README.md&#10;#&#9;modified:   bash/deploy.sh&#10;#&#9;modified:   bash/remove-logs.sh&#10;#&#9;modified:   pom.xml&#10;#&#9;modified:   target/classes/org/misha/wsdl/currency/ConversionRate.class&#10;#&#9;modified:   target/classes/org/misha/wsdl/currency/ConversionRateResponse.class&#10;#&#9;modified:   target/classes/org/misha/wsdl/currency/Currency.class&#10;#&#9;modified:   target/classes/org/misha/wsdl/currency/ObjectFactory.class&#10;#&#9;modified:   target/classes/org/misha/wsdl/currency/package-info.class&#10;#&#9;modified:   target/converter-ws-1.0-SNAPSHOT.jar&#10;#&#10;# Untracked files:&#10;#&#9;target/dependency-jars/&#10;#&#10;">
+      <created>1426943106357</created>
+      <updated>1426943106357</updated>
+    </task>
+    <task id="LOCAL-00006" summary="StringView">
+      <created>1426943169007</created>
+      <updated>1426943169007</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14218000" />
+    <option name="totallyTimeSpent" value="18560000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1922" height="1081" extended-state="6" />
+    <frame x="-1" y="27" width="1602" height="843" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48801744" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -757,11 +797,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.08716577" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.091612905" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18235295" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32897604" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18193549" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32897604" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -784,7 +824,9 @@
     <MESSAGE value="init" />
     <MESSAGE value="dev::modify pom, add ILS and RUB" />
     <MESSAGE value="Merge https://github.com/shma2001gmailcom/simple-ws-with-jaxb-and-maven&#10;&#10;Conflicts:&#10;&#9;pom.xml&#10;#&#10;# It looks like you may be committing a merge.&#10;# If this is not correct, please remove the file&#10;#&#9;.git/MERGE_HEAD&#10;# and try again.&#10;&#10;&#10;# Please enter the commit message for your changes. Lines starting&#10;# with '#' will be ignored, and an empty message aborts the commit.&#10;# On branch master&#10;# All conflicts fixed but you are still merging.&#10;#&#10;# Changes to be committed:&#10;#&#9;modified:   .idea/workspace.xml&#10;#&#9;new file:   README.md&#10;#&#9;modified:   bash/deploy.sh&#10;#&#9;modified:   bash/remove-logs.sh&#10;#&#9;modified:   pom.xml&#10;#&#9;modified:   target/classes/org/misha/wsdl/currency/ConversionRate.class&#10;#&#9;modified:   target/classes/org/misha/wsdl/currency/ConversionRateResponse.class&#10;#&#9;modified:   target/classes/org/misha/wsdl/currency/Currency.class&#10;#&#9;modified:   target/classes/org/misha/wsdl/currency/ObjectFactory.class&#10;#&#9;modified:   target/classes/org/misha/wsdl/currency/package-info.class&#10;#&#9;modified:   target/converter-ws-1.0-SNAPSHOT.jar&#10;#&#10;# Untracked files:&#10;#&#9;target/dependency-jars/&#10;#&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge https://github.com/shma2001gmailcom/simple-ws-with-jaxb-and-maven&#10;&#10;Conflicts:&#10;&#9;pom.xml&#10;#&#10;# It looks like you may be committing a merge.&#10;# If this is not correct, please remove the file&#10;#&#9;.git/MERGE_HEAD&#10;# and try again.&#10;&#10;&#10;# Please enter the commit message for your changes. Lines starting&#10;# with '#' will be ignored, and an empty message aborts the commit.&#10;# On branch master&#10;# All conflicts fixed but you are still merging.&#10;#&#10;# Changes to be committed:&#10;#&#9;modified:   .idea/workspace.xml&#10;#&#9;new file:   README.md&#10;#&#9;modified:   bash/deploy.sh&#10;#&#9;modified:   bash/remove-logs.sh&#10;#&#9;modified:   pom.xml&#10;#&#9;modified:   target/classes/org/misha/wsdl/currency/ConversionRate.class&#10;#&#9;modified:   target/classes/org/misha/wsdl/currency/ConversionRateResponse.class&#10;#&#9;modified:   target/classes/org/misha/wsdl/currency/Currency.class&#10;#&#9;modified:   target/classes/org/misha/wsdl/currency/ObjectFactory.class&#10;#&#9;modified:   target/classes/org/misha/wsdl/currency/package-info.class&#10;#&#9;modified:   target/converter-ws-1.0-SNAPSHOT.jar&#10;#&#10;# Untracked files:&#10;#&#9;target/dependency-jars/&#10;#&#10;" />
+    <MESSAGE value="Merge https://github.com/shma2001gmailcom/simple-ws-with-jaxb-and-maven&#10;&#10;Conflicts:&#10;&#9;pom.xml&#10;#&#10;# It looks like you may be committing a merge.&#10;# If this is not correct, please remove the file&#10;#&#9;.git/MERGE_HEAD&#10;# and try again.&#10;&#10;# Please enter the commit message for your changes. Lines starting&#10;# with '#' will be ignored, and an empty message aborts the commit.&#10;# On branch master&#10;# All conflicts fixed but you are still merging.&#10;#&#10;# Changes to be committed:&#10;#&#9;modified:   .idea/workspace.xml&#10;#&#9;new file:   README.md&#10;#&#9;modified:   bash/deploy.sh&#10;#&#9;modified:   bash/remove-logs.sh&#10;#&#9;modified:   pom.xml&#10;#&#9;modified:   target/classes/org/misha/wsdl/currency/ConversionRate.class&#10;#&#9;modified:   target/classes/org/misha/wsdl/currency/ConversionRateResponse.class&#10;#&#9;modified:   target/classes/org/misha/wsdl/currency/Currency.class&#10;#&#9;modified:   target/classes/org/misha/wsdl/currency/ObjectFactory.class&#10;#&#9;modified:   target/classes/org/misha/wsdl/currency/package-info.class&#10;#&#9;modified:   target/converter-ws-1.0-SNAPSHOT.jar&#10;#&#10;# Untracked files:&#10;#&#9;target/dependency-jars/&#10;#&#10;" />
+    <MESSAGE value="StringView" />
+    <option name="LAST_COMMIT_MESSAGE" value="StringView" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -794,18 +836,176 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/main/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/service/CurrencyService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="5" selection-start="1429" selection-end="1429" vertical-scroll-proportion="0.0" vertical-offset="7" max-vertical-offset="851">
+        <state line="15" column="13" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="805">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bash/tar.sh">
+    <entry file="file://$PROJECT_DIR$/bash/deploy.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="28" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0" vertical-offset="69" max-vertical-offset="299">
+        <state line="1" column="0" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0" vertical-offset="1242" max-vertical-offset="1886">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="44" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0" vertical-offset="299" max-vertical-offset="2438">
+          <folding>
+            <marker date="1426844724087" expanded="true" signature="1201:2620" placeholder="..." />
+            <marker date="1426844724087" expanded="true" signature="2641:3513" placeholder="..." />
+            <marker date="1426844724087" expanded="true" signature="2830:3491" placeholder="..." />
+            <marker date="1426844724087" expanded="true" signature="2860:3458" placeholder="..." />
+            <marker date="1426844724087" expanded="true" signature="2895:3144" placeholder="..." />
+            <marker date="1426844724087" expanded="true" signature="3534:4258" placeholder="..." />
+            <marker date="1426844724087" expanded="true" signature="3669:4236" placeholder="..." />
+            <marker date="1426844724087" expanded="true" signature="3701:4206" placeholder="..." />
+            <marker date="1426844724087" expanded="true" signature="3831:3923" placeholder="..." />
+            <marker date="1426844724087" expanded="true" signature="3963:4173" placeholder="..." />
+            <marker date="1426844724087" expanded="true" signature="4009:4132" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bash/remove-logs.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="14" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0" vertical-offset="138" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="17" selection-start="1291" selection-end="1291" vertical-scroll-proportion="0.0" vertical-offset="575" max-vertical-offset="966">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="69" max-vertical-offset="966">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/views/StringView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0" vertical-offset="230" max-vertical-offset="529">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bash/run.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0" vertical-offset="46" max-vertical-offset="184">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bash/run.cmd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="39" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="23" max-vertical-offset="161" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/service/CurrencyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="13" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="805">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bash/deploy.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1886">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="44" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0" vertical-offset="299" max-vertical-offset="2438">
+          <folding>
+            <marker date="1426844724087" expanded="true" signature="1201:2620" placeholder="..." />
+            <marker date="1426844724087" expanded="true" signature="2641:3513" placeholder="..." />
+            <marker date="1426844724087" expanded="true" signature="2830:3491" placeholder="..." />
+            <marker date="1426844724087" expanded="true" signature="2860:3458" placeholder="..." />
+            <marker date="1426844724087" expanded="true" signature="2895:3144" placeholder="..." />
+            <marker date="1426844724087" expanded="true" signature="3534:4258" placeholder="..." />
+            <marker date="1426844724087" expanded="true" signature="3669:4236" placeholder="..." />
+            <marker date="1426844724087" expanded="true" signature="3701:4206" placeholder="..." />
+            <marker date="1426844724087" expanded="true" signature="3831:3923" placeholder="..." />
+            <marker date="1426844724087" expanded="true" signature="3963:4173" placeholder="..." />
+            <marker date="1426844724087" expanded="true" signature="4009:4132" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bash/remove-logs.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="14" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0" vertical-offset="138" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="17" selection-start="1291" selection-end="1291" vertical-scroll-proportion="0.0" vertical-offset="575" max-vertical-offset="966">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///opt/apache-maven-3.2.2/lib/maven-model-builder-3.2.2.jar!/org/apache/maven/model/pom-4.0.0.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="8" selection-start="2891" selection-end="2891" vertical-scroll-proportion="0.0" vertical-offset="2484" max-vertical-offset="3588" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="411" max-vertical-offset="966">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/views/StringView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0" vertical-offset="230" max-vertical-offset="529">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bash/run.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0" vertical-offset="46" max-vertical-offset="184">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bash/run.cmd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="39" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="23" max-vertical-offset="161" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/service/CurrencyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="13" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="805">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="5" selection-start="1429" selection-end="1429" vertical-scroll-proportion="0.0" vertical-offset="7" max-vertical-offset="851" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bash/tar.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="28" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0" vertical-offset="69" max-vertical-offset="299" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/currency.wsdl">
@@ -817,37 +1017,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/ConversionRateResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="16" selection-start="1488" selection-end="1488" vertical-scroll-proportion="0.0" vertical-offset="1150" max-vertical-offset="1403">
-          <folding />
-        </state>
+        <state line="50" column="16" selection-start="1488" selection-end="1488" vertical-scroll-proportion="0.0" vertical-offset="1150" max-vertical-offset="1403" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/ObjectFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="31" selection-start="2007" selection-end="2007" vertical-scroll-proportion="0.0" vertical-offset="1334" max-vertical-offset="1587">
-          <folding />
-        </state>
+        <state line="58" column="31" selection-start="2007" selection-end="2007" vertical-scroll-proportion="0.0" vertical-offset="1334" max-vertical-offset="1587" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/ConversionRate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="20" selection-start="2002" selection-end="2002" vertical-scroll-proportion="0.0" vertical-offset="1610" max-vertical-offset="2093">
-          <folding />
-        </state>
+        <state line="70" column="20" selection-start="2002" selection-end="2002" vertical-scroll-proportion="0.0" vertical-offset="1610" max-vertical-offset="2093" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/Currency.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="342" column="0" selection-start="7940" selection-end="7940" vertical-scroll-proportion="0.0" vertical-offset="7866" max-vertical-offset="7866">
-          <folding />
-        </state>
+        <state line="342" column="0" selection-start="7940" selection-end="7940" vertical-scroll-proportion="0.0" vertical-offset="7866" max-vertical-offset="7866" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bash/view-log.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="9" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0" vertical-offset="115" max-vertical-offset="299">
-          <folding />
-        </state>
+        <state line="5" column="9" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0" vertical-offset="115" max-vertical-offset="299" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.xml">
@@ -860,7 +1050,9 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/views/StringView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="0" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="483">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -871,25 +1063,7 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-oxm/3.1.3.RELEASE/spring-oxm-3.1.3.RELEASE.jar!/org/springframework/oxm/config/spring-oxm-3.1.xsd">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="4" selection-start="877" selection-end="877" vertical-scroll-proportion="0.0" vertical-offset="326" max-vertical-offset="3772">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="17" selection-start="1291" selection-end="1291" vertical-scroll-proportion="0.0" vertical-offset="276" max-vertical-offset="966">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/service/CurrencyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="464" selection-end="464" vertical-scroll-proportion="-5.2727275" vertical-offset="171" max-vertical-offset="805">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
+        <state line="16" column="4" selection-start="877" selection-end="877" vertical-scroll-proportion="0.0" vertical-offset="326" max-vertical-offset="3772" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.xml">
@@ -901,9 +1075,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bash/tar.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="28" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="299">
-          <folding />
-        </state>
+        <state line="3" column="28" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="299" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/currency.wsdl">
@@ -913,52 +1085,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/ConversionRateResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="16" selection-start="1698" selection-end="1698" vertical-scroll-proportion="0.0" vertical-offset="1334" max-vertical-offset="1587">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/ObjectFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="31" selection-start="2007" selection-end="2007" vertical-scroll-proportion="0.0" vertical-offset="1334" max-vertical-offset="1587">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/ConversionRate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="20" selection-start="1985" selection-end="1985" vertical-scroll-proportion="0.0" vertical-offset="1564" max-vertical-offset="2047">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/Currency.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="342" column="0" selection-start="7940" selection-end="7940" vertical-scroll-proportion="0.0" vertical-offset="7002" max-vertical-offset="7912">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="14" selection-start="372" selection-end="372" vertical-scroll-proportion="0.33153152" vertical-offset="0" max-vertical-offset="736">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///opt/apache-maven-3.2.2/lib/maven-model-builder-3.2.2.jar!/org/apache/maven/model/pom-4.0.0.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="8" selection-start="2891" selection-end="2891" vertical-scroll-proportion="0.0" vertical-offset="2484" max-vertical-offset="3588">
-          <folding />
-        </state>
+        <state line="82" column="8" selection-start="2891" selection-end="2891" vertical-scroll-proportion="0.0" vertical-offset="2484" max-vertical-offset="3588" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="44" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2438">
-          <folding />
+          <folding>
+            <marker date="1426844724087" expanded="true" signature="1201:2620" placeholder="..." />
+            <marker date="1426844724087" expanded="true" signature="2641:3513" placeholder="..." />
+            <marker date="1426844724087" expanded="true" signature="2830:3491" placeholder="..." />
+            <marker date="1426844724087" expanded="true" signature="2860:3458" placeholder="..." />
+            <marker date="1426844724087" expanded="true" signature="2895:3144" placeholder="..." />
+            <marker date="1426844724087" expanded="true" signature="3534:4258" placeholder="..." />
+            <marker date="1426844724087" expanded="true" signature="3669:4236" placeholder="..." />
+            <marker date="1426844724087" expanded="true" signature="3701:4206" placeholder="..." />
+            <marker date="1426844724087" expanded="true" signature="3831:3923" placeholder="..." />
+            <marker date="1426844724087" expanded="true" signature="3963:4173" placeholder="..." />
+            <marker date="1426844724087" expanded="true" signature="4009:4132" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -971,9 +1118,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bash/view-log.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="8" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="299">
-          <folding />
-        </state>
+        <state line="5" column="8" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="299" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bash/deploy.sh">
@@ -983,10 +1128,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/service/CurrencyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="13" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0" vertical-offset="112" max-vertical-offset="667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/ConversionRate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="20" selection-start="1985" selection-end="1985" vertical-scroll-proportion="0.2954955" vertical-offset="1193" max-vertical-offset="1748" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/Currency.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="179" column="12" selection-start="6425" selection-end="6425" vertical-scroll-proportion="0.0" vertical-offset="3932" max-vertical-offset="7866" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/ObjectFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="31" selection-start="2007" selection-end="2007" vertical-scroll-proportion="0.53321034" vertical-offset="861" max-vertical-offset="1403" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="17" selection-start="1291" selection-end="1291" vertical-scroll-proportion="0.0" vertical-offset="411" max-vertical-offset="966">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/ConversionRateResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="13" selection-start="1104" selection-end="1104" vertical-scroll-proportion="0.0" vertical-offset="618" max-vertical-offset="1173" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bash/run.cmd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="19" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="161" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="33" selection-start="1168" selection-end="1168" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="736">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bash/run.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="184">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/views/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0" vertical-offset="253" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/views/StringView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="188" selection-end="188" vertical-scroll-proportion="0.37297297" vertical-offset="0" max-vertical-offset="555">
-          <folding />
+        <state line="17" column="0" selection-start="487" selection-end="487" vertical-scroll-proportion="0.6452145" vertical-offset="0" max-vertical-offset="606">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
