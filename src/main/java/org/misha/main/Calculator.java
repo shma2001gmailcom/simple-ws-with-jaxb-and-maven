@@ -46,9 +46,12 @@ public class Calculator {
     public static Currency readCurrency(BufferedReader in) throws IOException {
         Currency fromCurrency;
         String line = in.readLine();
+        log.debug(line + "selected.");
         fromCurrency = findCurrencyName(line);
         while(fromCurrency == null) {
-            log.info("Enter 'U' for USD, 'R' for RUB or 'I' for ILS or CTRL-C to exit:");
+            log.error("The '"+ line +"'" +
+                              " is incorrect input. Please press 'ENTER' or type 'E' for EUR, type 'U' for USD, 'R' for RUB or 'I' for ILS or CTRL-C to exit:");
+            line = in.readLine();
             fromCurrency= findCurrencyName(line);
         }
         return fromCurrency;
