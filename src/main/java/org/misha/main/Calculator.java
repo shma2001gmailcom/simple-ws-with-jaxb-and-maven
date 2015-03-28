@@ -19,15 +19,21 @@ import java.util.List;
 public class Calculator {
     public static final String SELECT_AMOUNT = "\nPlease enter some integer value or type CTRL-C to exit.";
     public static final String SELECT_CURRENCY = "\nPlease " +
-            "\n-- Press 'ENTER' or type 'e' for EUR, " +
+            "\n-- Type 'e' for EUR, " +
             "\n-- Type 'u' for USD, " +
             "\n-- Type 'r' for RUB, " +
             "\n-- Type 'i' for ILS, " +
+            "\n-- Type 'j' for JPY, " +
+            "\n-- Type 'c' for CHF, " +
+            "\n-- Type 'g' for GBP, " +
             "\n-- Type 'CTRL-C' to exit:";
     private static Logger log = Logger.getLogger(Calculator.class);
     private final static List<Currency> list = new ArrayList<Currency>(4);
 
     static {
+        list.add(Currency.JPY);
+        list.add(Currency.GBP);
+        list.add(Currency.CHF);
         list.add(Currency.EUR);
         list.add(Currency.USD);
         list.add(Currency.ILS);

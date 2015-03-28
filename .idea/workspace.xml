@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3d66295d-faf3-4478-b2b3-ce22f1f8c7bd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/misha/main/Calculator.java" afterPath="$PROJECT_DIR$/src/main/java/org/misha/main/Calculator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/misha/main/Launcher.java" afterPath="$PROJECT_DIR$/src/main/java/org/misha/main/Launcher.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/ConversionRate.java" afterPath="$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/ConversionRate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/ConversionRateResponse.java" afterPath="$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/ConversionRateResponse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/Currency.java" afterPath="$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/Currency.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/ObjectFactory.java" afterPath="$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/ObjectFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/package-info.java" afterPath="$PROJECT_DIR$/src/main/java/org/misha/wsdl/currency/package-info.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="converter-ws.iws" />
@@ -89,7 +93,16 @@
       <file leaf-file-name="Calculator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/main/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="26" selection-start="3756" selection-end="3756" vertical-scroll-proportion="1.5477272" vertical-offset="1527" max-vertical-offset="2415">
+            <state line="21" column="19" selection-start="685" selection-end="685" vertical-scroll-proportion="-0.3659091" vertical-offset="414" max-vertical-offset="2553">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StringView.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/views/StringView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="18" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="20" max-vertical-offset="460">
               <folding />
             </state>
           </provider>
@@ -115,20 +128,49 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CurrencyService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/service/CurrencyService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="69" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="667">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="WebServiceTemplate.java" pinned="false" current="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/ws/spring-ws-core/2.1.2.RELEASE/spring-ws-core-2.1.2.RELEASE-sources.jar!/org/springframework/ws/client/core/WebServiceTemplate.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="368" column="18" selection-start="18075" selection-end="18075" vertical-scroll-proportion="0.0" vertical-offset="6241" max-vertical-offset="16606">
-              <folding />
+              <folding>
+                <element signature="e#0#39513#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#10825#10959#0" expanded="false" />
+                <element signature="e#10948#10949#0" expanded="false" />
+                <element signature="e#11121#11122#0" expanded="false" />
+                <element signature="e#11163#11164#0" expanded="false" />
+                <element signature="e#11951#11952#0" expanded="false" />
+                <element signature="e#12013#12014#0" expanded="false" />
+                <element signature="e#12107#12108#0" expanded="false" />
+                <element signature="e#12140#12141#0" expanded="false" />
+                <element signature="e#12246#12247#0" expanded="false" />
+                <element signature="e#12290#12291#0" expanded="false" />
+                <element signature="e#12390#12391#0" expanded="false" />
+                <element signature="e#12425#12426#0" expanded="false" />
+                <element signature="e#12539#12540#0" expanded="false" />
+                <element signature="e#12587#12588#0" expanded="false" />
+                <element signature="e#12713#12714#0" expanded="false" />
+                <element signature="e#12756#12757#0" expanded="false" />
+                <element signature="e#13095#13096#0" expanded="false" />
+                <element signature="e#13159#13160#0" expanded="false" />
+                <element signature="e#14253#14254#0" expanded="false" />
+                <element signature="e#14323#14324#0" expanded="false" />
+                <element signature="e#15494#15495#0" expanded="false" />
+                <element signature="e#15564#15565#0" expanded="false" />
+                <element signature="e#15817#15818#0" expanded="false" />
+                <element signature="e#15852#15853#0" expanded="false" />
+                <element signature="e#16137#16138#0" expanded="false" />
+                <element signature="e#16185#16186#0" expanded="false" />
+                <element signature="e#18812#19553#0" expanded="false" />
+                <element signature="e#19542#19543#0" expanded="false" />
+                <element signature="e#19555#20065#0" expanded="false" />
+                <element signature="e#20054#20055#0" expanded="false" />
+                <element signature="e#21366#21764#0" expanded="false" />
+                <element signature="e#21741#21742#0" expanded="false" />
+                <element signature="e#23929#24302#0" expanded="false" />
+                <element signature="e#24291#24292#0" expanded="false" />
+                <element signature="e#27602#27632#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -804,7 +846,7 @@
       <workItem from="1427464999648" duration="107000" />
       <workItem from="1427477444768" duration="3033000" />
       <workItem from="1427512798952" duration="14295000" />
-      <workItem from="1427536738906" duration="2683000" />
+      <workItem from="1427536738906" duration="4943000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1426792852749</created>
@@ -846,11 +888,15 @@
       <created>1427528272109</created>
       <updated>1427528272109</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="correct output format&#10;">
+      <created>1427539539332</created>
+      <updated>1427539539332</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39474000" />
+    <option name="totallyTimeSpent" value="41734000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1600" y="0" width="1920" height="1080" extended-state="6" />
@@ -870,6 +916,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3278867" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -881,7 +928,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3278867" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -904,7 +950,8 @@
     <MESSAGE value="StringView" />
     <MESSAGE value="StringView&#10;" />
     <MESSAGE value="correct error with currency selection&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="correct error with currency selection&#10;" />
+    <MESSAGE value="correct output format&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="correct output format&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1158,13 +1205,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/views/StringView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="374" selection-end="374" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="460">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/views/GoodView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="54" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="506">
@@ -1199,7 +1239,45 @@
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/ws/spring-ws-core/2.1.2.RELEASE/spring-ws-core-2.1.2.RELEASE-sources.jar!/org/springframework/ws/client/core/WebServiceTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="368" column="18" selection-start="18075" selection-end="18075" vertical-scroll-proportion="0.0" vertical-offset="6241" max-vertical-offset="16606">
-          <folding />
+          <folding>
+            <element signature="e#0#39513#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#10825#10959#0" expanded="false" />
+            <element signature="e#10948#10949#0" expanded="false" />
+            <element signature="e#11121#11122#0" expanded="false" />
+            <element signature="e#11163#11164#0" expanded="false" />
+            <element signature="e#11951#11952#0" expanded="false" />
+            <element signature="e#12013#12014#0" expanded="false" />
+            <element signature="e#12107#12108#0" expanded="false" />
+            <element signature="e#12140#12141#0" expanded="false" />
+            <element signature="e#12246#12247#0" expanded="false" />
+            <element signature="e#12290#12291#0" expanded="false" />
+            <element signature="e#12390#12391#0" expanded="false" />
+            <element signature="e#12425#12426#0" expanded="false" />
+            <element signature="e#12539#12540#0" expanded="false" />
+            <element signature="e#12587#12588#0" expanded="false" />
+            <element signature="e#12713#12714#0" expanded="false" />
+            <element signature="e#12756#12757#0" expanded="false" />
+            <element signature="e#13095#13096#0" expanded="false" />
+            <element signature="e#13159#13160#0" expanded="false" />
+            <element signature="e#14253#14254#0" expanded="false" />
+            <element signature="e#14323#14324#0" expanded="false" />
+            <element signature="e#15494#15495#0" expanded="false" />
+            <element signature="e#15564#15565#0" expanded="false" />
+            <element signature="e#15817#15818#0" expanded="false" />
+            <element signature="e#15852#15853#0" expanded="false" />
+            <element signature="e#16137#16138#0" expanded="false" />
+            <element signature="e#16185#16186#0" expanded="false" />
+            <element signature="e#18812#19553#0" expanded="false" />
+            <element signature="e#19542#19543#0" expanded="false" />
+            <element signature="e#19555#20065#0" expanded="false" />
+            <element signature="e#20054#20055#0" expanded="false" />
+            <element signature="e#21366#21764#0" expanded="false" />
+            <element signature="e#21741#21742#0" expanded="false" />
+            <element signature="e#23929#24302#0" expanded="false" />
+            <element signature="e#24291#24292#0" expanded="false" />
+            <element signature="e#27602#27632#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1219,9 +1297,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/views/StringView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="18" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="20" max-vertical-offset="460">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/misha/main/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="26" selection-start="3756" selection-end="3756" vertical-scroll-proportion="1.5477272" vertical-offset="1527" max-vertical-offset="2415">
+        <state line="21" column="19" selection-start="685" selection-end="685" vertical-scroll-proportion="-0.3659091" vertical-offset="414" max-vertical-offset="2553">
           <folding />
         </state>
       </provider>
