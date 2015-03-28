@@ -13,10 +13,12 @@ import static org.misha.main.Calculator.*;
  * date: 3/28/15 12:57 PM.
  */
 public class Launcher {
-    public static final String PROMPT = "\n\n==================================================================================" +
+    public static final String PROMPT
+            = "\n\n==================================================================================" +
             "\nApplication converts Euro, US Dollars, Israel Shekels or " +
             "Russian Roubles \nto three another currencies. \nThe Conversion is preparing through web service " +
-            "'http://www.webserviceX.NET'.\n==================================================================================\n\n";
+            "'http://www.webserviceX.NET'.\n" +
+            "==================================================================================\n\n";
     private static Logger log = Logger.getLogger(Launcher.class);
 
     public static void main(String[] args) throws IOException {

@@ -27,6 +27,12 @@ public class Calculator {
             "\n-- Type 'c' for CHF, " +
             "\n-- Type 'g' for GBP, " +
             "\n-- Type 'CTRL-C' to exit:";
+    public static final String THE_NEXT_LINE = "\n     The next line: \n'";
+    public static final String IS_INCORRECT_INPUT = "'\n     is incorrect input. ";
+    public static final String THE_LINE = "\n\nThe line '";
+    public static final String COULDN_T_BE_PARSED_AS_INTEGER_VALUE = "' couldn't be parsed as integer value.\n";
+    public static final String SELECTED_ENTER_AMOUNT_TO_CONVERT = " selected. Enter amount to convert:";
+    public static final String PLEASE_WAIT_WHILE_DATA_IS_TRANSFERRING = "Please wait while data is transferring...\n";
     private static Logger log = Logger.getLogger(Calculator.class);
     private final static List<Currency> list = new ArrayList<Currency>(4);
 
@@ -61,8 +67,7 @@ public class Calculator {
         String line = in.readLine();
         fromCurrency = findCurrencyName(line);
         while (fromCurrency == null) {
-            log.error("\n     The next line: \n'" + line + "'" +
-                              "\n     is incorrect input. " + SELECT_CURRENCY
+            log.error(THE_NEXT_LINE + line + IS_INCORRECT_INPUT + SELECT_CURRENCY
             );
             line = in.readLine();
             fromCurrency = findCurrencyName(line);
@@ -77,7 +82,7 @@ public class Calculator {
             try {
                 amount = Integer.parseInt(line);
             } catch (final NumberFormatException e) {
-                log.error("\n\nThe line '" + line + "' couldn't be parsed as integer value.\nu");
+                log.error(THE_LINE + line + COULDN_T_BE_PARSED_AS_INTEGER_VALUE);
                 log.info(SELECT_AMOUNT);
                 amount = 0;
             }
@@ -90,7 +95,7 @@ public class Calculator {
         for (Currency currency : list) {
             name = currency.name();
             if (name.startsWith(line.toUpperCase())) {
-                log.info(name + " selected. Enter amount to convert:");
+                log.info(name + SELECTED_ENTER_AMOUNT_TO_CONVERT);
                 return currency;
             }
         }
@@ -103,7 +108,7 @@ public class Calculator {
         StringView stringView = context.getBean(StringView.class);
         log.info(stringView.getView((double) fromAmount, fromCurrency));
         list.remove(fromCurrency);
-        log.info("Please wait while data is transferring...\n");
+        log.info(PLEASE_WAIT_WHILE_DATA_IS_TRANSFERRING);
         String answer = "\n\n" + stringView
                 .getView(fromAmount * currencyService.getConversionRate(fromCurrency, fromCurrency), fromCurrency);
         for (Currency another : list) {
