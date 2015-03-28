@@ -18,6 +18,11 @@
             <artifactId>log4j</artifactId>
             <version>1.2.17</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.1</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -67,7 +72,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>org.misha.main.Main</mainClass>
+                            <mainClass>org.misha.main.Calculator</mainClass>
                             <classpathPrefix>dependency-jars/</classpathPrefix>
                         </manifest>
                         <manifestEntries>
