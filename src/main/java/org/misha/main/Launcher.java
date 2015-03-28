@@ -13,13 +13,18 @@ import static org.misha.main.Calculator.*;
  * date: 3/28/15 12:57 PM.
  */
 public class Launcher {
+    public static final String PROMPT = "\n\n==================================================================================" +
+            "\nApplication converts Euro, US Dollars, Israel Shekels or " +
+            "Russian Roubles \nto three another currencies. \nThe Conversion is preparing through web service " +
+            "'http://www.webserviceX.NET'.\n==================================================================================\n\n";
     private static Logger log = Logger.getLogger(Launcher.class);
 
     public static void main(String[] args) throws IOException {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         int size = size();
-        for (int i = 0; i < size;++i) {
-            log.info("Enter 'U' for USD, 'R' for RUB or 'I' for ILS or CTRL-C to exit:");
+        for (int i = 0; i < size; ++i) {
+            log.info(PROMPT);
+            log.info(SELECT_CURRENCY);
             Calculator calculator = create(readCurrency(in), readAmount(in, 0));
             calculator.calculateView();
         }

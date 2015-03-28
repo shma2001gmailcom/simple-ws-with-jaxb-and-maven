@@ -17,6 +17,13 @@ import java.util.List;
  * date: 3/20/15 12:43 AM.
  */
 public class Calculator {
+    public static final String SELECT_AMOUNT = "\nPlease enter some integer value or type CTRL-C to exit.";
+    public static final String SELECT_CURRENCY = "\nPlease " +
+            "\n-- Press 'ENTER' or type 'e' for EUR, " +
+            "\n-- Type 'u' for USD, " +
+            "\n-- Type 'r' for RUB, " +
+            "\n-- Type 'i' for ILS, " +
+            "\n-- Type 'CTRL-C' to exit:";
     private static Logger log = Logger.getLogger(Calculator.class);
     private final static List<Currency> list = new ArrayList<Currency>(4);
 
@@ -46,11 +53,10 @@ public class Calculator {
     public static Currency readCurrency(BufferedReader in) throws IOException {
         Currency fromCurrency;
         String line = in.readLine();
-        log.debug(line + "selected.");
         fromCurrency = findCurrencyName(line);
         while(fromCurrency == null) {
-            log.error("The '"+ line +"'" +
-                              " is incorrect input. Please press 'ENTER' or type 'E' for EUR, type 'U' for USD, 'R' for RUB or 'I' for ILS or CTRL-C to exit:");
+            log.error("\n     The next line: \n'"+ line +"'" +
+                              "\n     is incorrect input. " + SELECT_CURRENCY);
             line = in.readLine();
             fromCurrency= findCurrencyName(line);
         }
@@ -64,7 +70,7 @@ public class Calculator {
             try {
                 amount = Integer.parseInt(line);
             } catch (final NumberFormatException e) {
-                log.info("Please enter some integer value or type CTRL-C to exit.");
+                log.info(SELECT_AMOUNT);
                 amount = 0;
             }
         }
@@ -75,7 +81,7 @@ public class Calculator {
         String name;
         for(Currency currency :list) {
             name = currency.name();
-            if(name.startsWith(line)) {
+            if(name.startsWith(line.toUpperCase())) {
                 log.info(name + " selected. Enter amount to convert:");
                 return currency;
             }
@@ -89,6 +95,7 @@ public class Calculator {
         StringView stringView = context.getBean(StringView.class);
         log.info(stringView.getView((double)fromAmount, fromCurrency));
         list.remove(fromCurrency);
+        log.info("Please wait while data is transferring...\n");
         for(Currency another:list) {
             log.info(stringView.getView(fromAmount*currencyService.getConversionRate(fromCurrency, another), another));
         }
