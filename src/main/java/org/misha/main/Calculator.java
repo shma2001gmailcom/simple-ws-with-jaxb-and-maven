@@ -77,6 +77,7 @@ public class Calculator {
             try {
                 amount = Integer.parseInt(line);
             } catch (final NumberFormatException e) {
+                log.error("\n\nThe line '" + line + "' couldn't be parsed as integer value.\nu");
                 log.info(SELECT_AMOUNT);
                 amount = 0;
             }
