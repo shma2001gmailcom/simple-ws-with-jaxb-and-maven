@@ -46,7 +46,7 @@ public class Calculator {
         return new Calculator(currency, amount);
     }
 
-    public static int  size() {
+    public static int size() {
         return list.size();
     }
 
@@ -54,11 +54,12 @@ public class Calculator {
         Currency fromCurrency;
         String line = in.readLine();
         fromCurrency = findCurrencyName(line);
-        while(fromCurrency == null) {
-            log.error("\n     The next line: \n'"+ line +"'" +
-                              "\n     is incorrect input. " + SELECT_CURRENCY);
+        while (fromCurrency == null) {
+            log.error("\n     The next line: \n'" + line + "'" +
+                              "\n     is incorrect input. " + SELECT_CURRENCY
+            );
             line = in.readLine();
-            fromCurrency= findCurrencyName(line);
+            fromCurrency = findCurrencyName(line);
         }
         return fromCurrency;
     }
@@ -79,9 +80,9 @@ public class Calculator {
 
     private static Currency findCurrencyName(String line) {
         String name;
-        for(Currency currency :list) {
+        for (Currency currency : list) {
             name = currency.name();
-            if(name.startsWith(line.toUpperCase())) {
+            if (name.startsWith(line.toUpperCase())) {
                 log.info(name + " selected. Enter amount to convert:");
                 return currency;
             }
@@ -93,12 +94,16 @@ public class Calculator {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         CurrencyService currencyService = context.getBean(CurrencyService.class);
         StringView stringView = context.getBean(StringView.class);
-        log.info(stringView.getView((double)fromAmount, fromCurrency));
+        log.info(stringView.getView((double) fromAmount, fromCurrency));
         list.remove(fromCurrency);
         log.info("Please wait while data is transferring...\n");
-        for(Currency another:list) {
-            log.info(stringView.getView(fromAmount*currencyService.getConversionRate(fromCurrency, another), another));
+        String answer = "\n\n" + stringView
+                .getView(fromAmount * currencyService.getConversionRate(fromCurrency, fromCurrency), fromCurrency);
+        for (Currency another : list) {
+            answer += '\n' + stringView
+                    .getView(fromAmount * currencyService.getConversionRate(fromCurrency, another), another);
         }
         list.add(fromCurrency);
+        log.info(answer + "\n\n");
     }
 }

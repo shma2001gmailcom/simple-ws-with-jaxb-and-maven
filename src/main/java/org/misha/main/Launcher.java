@@ -22,8 +22,8 @@ public class Launcher {
     public static void main(String[] args) throws IOException {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         int size = size();
+        log.info(PROMPT);
         for (int i = 0; i < size; ++i) {
-            log.info(PROMPT);
             log.info(SELECT_CURRENCY);
             Calculator calculator = create(readCurrency(in), readAmount(in, 0));
             calculator.calculateView();
