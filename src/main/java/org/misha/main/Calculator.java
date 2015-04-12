@@ -35,7 +35,7 @@ public class Calculator {
     public static final String COULDN_T_BE_PARSED_AS_INTEGER_VALUE = "' couldn't be parsed as integer value.\n";
     public static final String SELECTED_ENTER_AMOUNT_TO_CONVERT = " selected. Enter amount to convert:";
     public static final String PLEASE_WAIT_WHILE_DATA_IS_TRANSFERRING = "Please wait while data is transferring...\n";
-    private static Logger log = Logger.getLogger(Calculator.class);
+    private static final Logger log = Logger.getLogger(Calculator.class);
     private final static List<Currency> list = new ArrayList<Currency>(4);
 
     static {
@@ -51,12 +51,12 @@ public class Calculator {
     private final Currency fromCurrency;
     private final int fromAmount;
 
-    private Calculator(final Currency currency, int amount) {
+    private Calculator(final Currency currency, final int amount) {
         fromCurrency = currency;
         fromAmount = amount;
     }
 
-    public static Calculator create(Currency currency, int amount) {
+    public static Calculator create(final Currency currency, final int amount) {
         return new Calculator(currency, amount);
     }
 
@@ -64,11 +64,11 @@ public class Calculator {
         return list.size();
     }
 
-    public static Currency readCurrency(BufferedReader in) throws IOException {
+    public static Currency readCurrency(final BufferedReader in) throws IOException {
         Currency fromCurrency;
         String line = in.readLine();
         fromCurrency = findCurrencyName(line);
-        while (fromCurrency == null) {
+        while (null == fromCurrency) {
             log.error(THE_NEXT_LINE + line + IS_INCORRECT_INPUT + SELECT_CURRENCY);
             line = in.readLine();
             fromCurrency = findCurrencyName(line);
@@ -78,7 +78,7 @@ public class Calculator {
 
     public static int readAmount(BufferedReader in, int amount) throws IOException {
         String line;
-        while (amount == 0) {
+        while (0 == amount) {
             line = in.readLine();
             try {
                 amount = Integer.parseInt(line);
@@ -91,9 +91,9 @@ public class Calculator {
         return amount;
     }
 
-    private static Currency findCurrencyName(String line) {
+    private static Currency findCurrencyName(final String line) {
         String name;
-        for (Currency currency : list) {
+        for (final Currency currency : list) {
             name = currency.name();
             if (StringUtils.isEmpty(name) || StringUtils.isEmpty(line)) {
                 System.exit(1);
@@ -107,15 +107,15 @@ public class Calculator {
     }
 
     public void calculateView() {
-        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-        CurrencyService currencyService = context.getBean(CurrencyService.class);
-        View stringView = context.getBean(StringView.class);
+        final ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        final CurrencyService currencyService = context.getBean(CurrencyService.class);
+        final View stringView = context.getBean(StringView.class);
         log.info(stringView.getView((double) fromAmount, fromCurrency));
         list.remove(fromCurrency);
         log.info(PLEASE_WAIT_WHILE_DATA_IS_TRANSFERRING);
         String answer = "\n\n" + stringView
                 .getView(fromAmount * currencyService.getConversionRate(fromCurrency, fromCurrency), fromCurrency);
-        for (Currency another : list) {
+        for (final Currency another : list) {
             answer += '\n' + stringView
                     .getView(fromAmount * currencyService.getConversionRate(fromCurrency, another), another);
         }

@@ -25,15 +25,15 @@ public class Launcher {
             "        RUB\nto all rest currencies. \nThe Conversion is preparing through web service " +
             "'http://www.webserviceX.NET'.\n" +
             "==================================================================================\n\n";
-    private static Logger log = Logger.getLogger(Launcher.class);
+    private static final Logger log = Logger.getLogger(Launcher.class);
 
-    public static void main(String[] args) throws IOException {
-        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-        int size = size();
+    public static void main(final String[] args) throws IOException {
+        final BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+        final int size = size();
         log.info(PROMPT);
         for (int i = 0; i < size; ++i) {
             log.info(SELECT_CURRENCY);
-            Calculator calculator = create(readCurrency(in), readAmount(in, 0));
+            final Calculator calculator = create(readCurrency(in), readAmount(in, 0));
             calculator.calculateView();
         }
     }

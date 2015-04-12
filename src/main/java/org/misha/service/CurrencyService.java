@@ -17,11 +17,11 @@ public class CurrencyService {
     @Autowired
     private WebServiceTemplate webServiceTemplate;
 
-    public Double getConversionRate(Currency fromCurrency, Currency toCurrency) {
-        ConversionRate conversionRate = new ObjectFactory().createConversionRate();
+    public Double getConversionRate(final Currency fromCurrency, final Currency toCurrency) {
+        final ConversionRate conversionRate = new ObjectFactory().createConversionRate();
         conversionRate.setFromCurrency(fromCurrency);
         conversionRate.setToCurrency(toCurrency);
-        ConversionRateResponse response =
+        final ConversionRateResponse response =
                 (ConversionRateResponse) webServiceTemplate.marshalSendAndReceive(conversionRate);
         return response.getConversionRateResult();
     }

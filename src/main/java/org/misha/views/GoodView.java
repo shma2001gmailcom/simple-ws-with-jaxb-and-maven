@@ -9,7 +9,7 @@ import org.misha.wsdl.currency.Currency;
 public class GoodView implements View {
     @Override
     public String getView(
-            Double conversionRate, Currency toCurrency
+            final Double conversionRate, final Currency toCurrency
     ) {
         return null;
     }

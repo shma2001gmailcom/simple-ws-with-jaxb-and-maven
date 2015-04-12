@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class StringView implements View {
-    public String getView(Double number, Currency toCurrency) {
+    public String getView(final Double number, final Currency toCurrency) {
         return String.format("%s %s;", String.format("%1$.2f", number), toCurrency);
     }
 }
