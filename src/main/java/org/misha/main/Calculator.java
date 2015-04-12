@@ -1,8 +1,10 @@
 package org.misha.main;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 import org.misha.service.CurrencyService;
 import org.misha.views.StringView;
+import org.misha.views.View;
 import org.misha.wsdl.currency.Currency;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -18,15 +20,15 @@ import java.util.List;
  */
 public class Calculator {
     public static final String SELECT_AMOUNT = "\nPlease enter some integer value or type CTRL-C to exit.";
-    public static final String SELECT_CURRENCY = "\nPlease " +
+    public static final String SELECT_CURRENCY = "\nPlease select currency to convert." +
             "\n-- Type 'e' for EUR, " +
-            "\n-- Type 'u' for USD, " +
-            "\n-- Type 'r' for RUB, " +
-            "\n-- Type 'i' for ILS, " +
-            "\n-- Type 'j' for JPY, " +
-            "\n-- Type 'c' for CHF, " +
-            "\n-- Type 'g' for GBP, " +
-            "\n-- Type 'CTRL-C' to exit:";
+            "\n--      'u' for USD, " +
+            "\n--      'r' for RUB, " +
+            "\n--      'i' for ILS, " +
+            "\n--      'j' for JPY, " +
+            "\n--      'c' for CHF, " +
+            "\n--      'g' for GBP, " +
+            "\n--      'CTRL-C' to exit:";
     public static final String THE_NEXT_LINE = "\n     The next line: \n'";
     public static final String IS_INCORRECT_INPUT = "'\n     is incorrect input. ";
     public static final String THE_LINE = "\n\nThe line '";
@@ -67,8 +69,7 @@ public class Calculator {
         String line = in.readLine();
         fromCurrency = findCurrencyName(line);
         while (fromCurrency == null) {
-            log.error(THE_NEXT_LINE + line + IS_INCORRECT_INPUT + SELECT_CURRENCY
-            );
+            log.error(THE_NEXT_LINE + line + IS_INCORRECT_INPUT + SELECT_CURRENCY);
             line = in.readLine();
             fromCurrency = findCurrencyName(line);
         }
@@ -94,6 +95,9 @@ public class Calculator {
         String name;
         for (Currency currency : list) {
             name = currency.name();
+            if (StringUtils.isEmpty(name) || StringUtils.isEmpty(line)) {
+                System.exit(1);
+            }
             if (name.startsWith(line.toUpperCase())) {
                 log.info(name + SELECTED_ENTER_AMOUNT_TO_CONVERT);
                 return currency;
@@ -105,7 +109,7 @@ public class Calculator {
     public void calculateView() {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         CurrencyService currencyService = context.getBean(CurrencyService.class);
-        StringView stringView = context.getBean(StringView.class);
+        View stringView = context.getBean(StringView.class);
         log.info(stringView.getView((double) fromAmount, fromCurrency));
         list.remove(fromCurrency);
         log.info(PLEASE_WAIT_WHILE_DATA_IS_TRANSFERRING);

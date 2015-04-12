@@ -15,8 +15,14 @@ import static org.misha.main.Calculator.*;
 public class Launcher {
     public static final String PROMPT
             = "\n\n==================================================================================" +
-            "\nApplication converts Euro, US Dollars, Israel Shekels or " +
-            "Russian Roubles \nto three another currencies. \nThe Conversion is preparing through web service " +
+            "\nThe app converts\n" +
+            "        JPY,\n" +
+            "        GBP,\n" +
+            "        CHF,\n" +
+            "        EUR,\n" +
+            "        USD,\n" +
+            "        ILS,\n" +
+            "        RUB\nto all rest currencies. \nThe Conversion is preparing through web service " +
             "'http://www.webserviceX.NET'.\n" +
             "==================================================================================\n\n";
     private static Logger log = Logger.getLogger(Launcher.class);
