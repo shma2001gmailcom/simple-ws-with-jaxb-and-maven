@@ -6,8 +6,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import static org.misha.main.Calculator.*;
-
 /**
  * author: misha
  * date: 3/28/15 12:57 PM.
@@ -29,11 +27,11 @@ public class Launcher {
 
     public static void main(final String[] args) throws IOException {
         final BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-        final int size = size();
+        final int size = Calculator.size();
         log.info(PROMPT);
         for (int i = 0; i < size; ++i) {
-            log.info(SELECT_CURRENCY);
-            final Calculator calculator = create(readCurrency(in), readAmount(in, 0));
+            log.info(Calculator.SELECT_CURRENCY);
+            final Calculator calculator = Calculator.create(Calculator.readCurrency(in), Calculator.readAmount(in, 0));
             calculator.calculateView();
         }
     }
