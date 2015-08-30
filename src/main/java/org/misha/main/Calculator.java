@@ -36,7 +36,7 @@ public class Calculator {
     public static final String SELECTED_ENTER_AMOUNT_TO_CONVERT = " selected. Enter amount to convert:";
     public static final String PLEASE_WAIT_WHILE_DATA_IS_TRANSFERRING = "Please wait while data is transferring...\n";
     private static final Logger log = Logger.getLogger(Calculator.class);
-    private final static List<Currency> list = new ArrayList<Currency>(){{
+    private final static List<Currency> list = new ArrayList<Currency>() {{
         add(Currency.JPY);
         add(Currency.GBP);
         add(Currency.CHF);
@@ -45,8 +45,6 @@ public class Calculator {
         add(Currency.ILS);
         add(Currency.RUB);
     }};
-
-
 
     private final Currency fromCurrency;
     private final int fromAmount;
