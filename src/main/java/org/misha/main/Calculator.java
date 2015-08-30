@@ -36,17 +36,17 @@ public class Calculator {
     public static final String SELECTED_ENTER_AMOUNT_TO_CONVERT = " selected. Enter amount to convert:";
     public static final String PLEASE_WAIT_WHILE_DATA_IS_TRANSFERRING = "Please wait while data is transferring...\n";
     private static final Logger log = Logger.getLogger(Calculator.class);
-    private final static List<Currency> list = new ArrayList<Currency>(4);
+    private final static List<Currency> list = new ArrayList<Currency>(){{
+        add(Currency.JPY);
+        add(Currency.GBP);
+        add(Currency.CHF);
+        add(Currency.EUR);
+        add(Currency.USD);
+        add(Currency.ILS);
+        add(Currency.RUB);
+    }};
 
-    static {
-        list.add(Currency.JPY);
-        list.add(Currency.GBP);
-        list.add(Currency.CHF);
-        list.add(Currency.EUR);
-        list.add(Currency.USD);
-        list.add(Currency.ILS);
-        list.add(Currency.RUB);
-    }
+
 
     private final Currency fromCurrency;
     private final int fromAmount;
@@ -65,9 +65,8 @@ public class Calculator {
     }
 
     public static Currency readCurrency(final BufferedReader in) throws IOException {
-        Currency fromCurrency;
         String line = in.readLine();
-        fromCurrency = findCurrencyName(line);
+        Currency fromCurrency = findCurrencyName(line);
         while (null == fromCurrency) {
             log.error(THE_NEXT_LINE + line + IS_INCORRECT_INPUT + SELECT_CURRENCY);
             line = in.readLine();
@@ -76,7 +75,7 @@ public class Calculator {
         return fromCurrency;
     }
 
-    public static int readAmount(BufferedReader in, int amount) throws IOException {
+    public static int readAmount(final BufferedReader in, int amount) throws IOException {
         String line;
         while (0 == amount) {
             line = in.readLine();

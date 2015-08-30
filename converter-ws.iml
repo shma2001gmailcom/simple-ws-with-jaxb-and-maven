@@ -39,6 +39,12 @@
     <orderEntry type="library" name="Maven: wsdl4j:wsdl4j:1.6.1" level="project" />
     <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.1" level="project" />
+    <orderEntry type="library" name="Maven: com.intellij:forms_rt:7.0.3" level="project" />
+    <orderEntry type="library" name="Maven: asm:asm-commons:3.0" level="project" />
+    <orderEntry type="library" name="Maven: asm:asm-tree:3.0" level="project" />
+    <orderEntry type="library" name="Maven: asm:asm:3.0" level="project" />
+    <orderEntry type="library" name="Maven: com.jgoodies:forms:1.1-preview" level="project" />
+    <orderEntry type="library" name="Maven: jdom:jdom:1.0" level="project" />
   </component>
   <component name="org.twodividedbyzero.idea.findbugs">
     <option name="_basePreferences">
@@ -246,4 +252,3 @@
     </option>
   </component>
 </module>
-
